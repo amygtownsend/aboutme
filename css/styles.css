@@ -1,0 +1,152 @@
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+/* CUSTOM STYLES */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #fffcff, #f5fffd);
+  background-size: cover;
+}
+
+h1, h2, .description p, a {
+  font-family: 'Overpass', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1em;
+  color: #234;
+}
+
+img {
+  background-size: cover;
+}
+
+.description p {
+  background: -webkit-linear-gradient(right, #63dbbe, #8ca6db, #b993d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 2.25em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #345;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #234;
+  margin: 0 15px;
+}
+
+a:hover {
+  color: #345;
+}
+
+.header {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-top: 20px solid transparent;
+  border-image: url('https://images.unsplash.com/photo-1496167117681-944f702be1f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8a9e41e445772471708b74b0835e4c35&auto=format&fit=crop&w=889&q=80') 30 stretch;
+}
+
+.icon {
+  display: inline-block;
+  text-align: center;
+  font-size: 3em;
+}
+
+.container {
+  margin: 10px;
+}
+
+.section {
+  margin: 15px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  flex-basis: 300px;
+}
+
+#section-1 {
+  border: 2px solid #b993d6;
+}
+
+#section-2 {
+  border: 2px solid #8ca6db;
+}
+
+#section-3 {
+  border: 2px solid #63dbbe;
+}
+
+#section-1 h2 {
+  color: #b993d6;
+}
+
+#section-2 h2 {
+  color: #8ca6db;
+}
+
+#section-3 h2 {
+  color: #63dbbe;
+}
