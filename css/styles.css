@@ -45,6 +45,7 @@ abbr,acronym { border: 0;
 
 /* CUSTOM STYLES */
 
+/* Flexbox styles */
 .flex {
   display: flex;
   justify-content: center;
@@ -65,28 +66,35 @@ h1, h2, .page-title p, a {
   font-weight: 600;
 }
 
+header {
+  background: #fff;
+  margin: 0;
+  overflow: hidden; /* Hide overflow from images */
+  position: relative;
+}
+
 .page-title {
   color: #000100;
+  margin: 0 30%;
+  z-index: 1; /* Position page title in front of images */
 }
 
 h1 {
   font-size: 3.75rem;
-  z-index: 1;
   padding-top: 35px;
   padding-bottom: 15px;
-  position: relative;
-}
 
-h2 {
-  font-size: 2.25rem;
-  margin-bottom: 15px;
 }
 
 .page-title p {
   font-size: 1.75rem;
   font-weight: 200;
   padding-bottom: 35px;
-  position: relative;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin-bottom: 15px;
 }
 
 main p {
@@ -97,20 +105,19 @@ main p {
 }
 
 img {
-  position: absolute;
-  width: 50%;
-  z-index: 0;
-  background-
+  position: absolute; /* Position images in the background */
+  width: 50.1%; /* Overlap images to hide gap */
+  z-index: 0; /* Position images in the background */
 }
 
 .img-flipped {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  left: 0;
+  -webkit-transform: scaleX(-1); /* Reflect image horizontally */
+  transform: scaleX(-1); /* Reflect image horizontally */
+  left: 0; /* Push image to left edge of the page */
 }
 
 .img-normal {
-  right: 0;
+  right: 0; /* Push image to right edge of the page */
 }
 
 a {
@@ -119,17 +126,6 @@ a {
 
 a:hover {
   color: #ddd;
-}
-
-header {
-  background: #fff;
-  margin: 0;
-  overflow: hidden;
-  position: relative;
-}
-
-.page-title {
-  margin: 0 30%;
 }
 
 main {
@@ -151,4 +147,12 @@ footer {
 
 footer li {
   margin: 0 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Extra padding to separate images from heading on mobile */
+  h1 {
+    line-height: 1em;
+    padding-top: 155px;
+  }
 }
